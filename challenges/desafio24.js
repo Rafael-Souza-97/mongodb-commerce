@@ -5,4 +5,4 @@ db.produtos.updateMany({}, { $push: { valoresNutricionais: {
     },
   });
 
-db.produtos.find({}, { nome: 1, valoresNutricionais: 1, _id: 0 });
+db.produtos.find({}, { _id: 0, nome: 1, valoresNutricionais: 1 });
